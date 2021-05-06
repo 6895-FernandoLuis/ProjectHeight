@@ -1,0 +1,44 @@
+body{
+    background-color:white;
+}
+.container{
+    background-color:#81FBB8;
+    width: 190px;
+    padding: 10px;
+    color:white;
+}
+.container2{
+    background-color: #81FBB8;
+    width: 190px;
+    padding: 10px;
+    margin-top:50px;
+    color:white;
+}
+.container3{
+    background-color: #81FBB8;
+    width: 190px;
+    padding: 10px;
+    margin-top:50px;
+    color:white;
+}
+
+.name{
+    color:white;
+    font-size:25px;
+   text-align: center;
+}
+.CM{
+    background-color: orange;
+    width: 170px;
+  
+}
+.M{
+    background-color: orange;
+    width: 170px;
+
+}
+.KM{
+    background-color: orange;
+    width: 170px;
+
+}
