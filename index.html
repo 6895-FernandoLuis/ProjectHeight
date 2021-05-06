@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>27</title>  
+     <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div class="container">
+    <p class="name">Converter Height</p>
+Centimeter
+<input type="number" name="inputNumber"placeholder="input number" oninput="ConverterHeight(this.value)">
+
+    <p class="CM">Centimeter : 
+        <br>
+        <span id="CMNumber">
+           
+        </span></p>
+    <p class="M">Meter: 
+    <br>
+        <span id="MNumber"></span></p>
+    <p class="KM">KiloMeter : <br>
+        <span id="KMNumber"></span></p>
+</div>
+
+<div class="container2">
+    <p class="name">Converter Height</p>
+Meter
+<input type="number" name="inputNumber"placeholder="input number" oninput="ConverterHeight2(this.value)">
+
+<p class="CM">Centimeter : 
+    <br>
+    <span id="CMNumber2">
+       
+    </span></p>
+<p class="M">Meter: 
+<br>
+    <span id="MNumber2"></span></p>
+<p class="KM">KiloMeter : <br>
+    <span id="KMNumber2"></span></p>
+</div>
+
+<div class="container3">
+    <p class="name">Converter Height</p>
+Kilometer
+<input type="number" name="inputNumber"placeholder="input number" oninput="ConverterHeight3(this.value)">
+
+<p class="CM">Centimeter : 
+    <br>
+    <span id="CMNumber3">
+       
+    </span></p>
+<p class="M">Meter: 
+<br>
+    <span id="MNumber3"></span></p>
+<p class="KM">KiloMeter : <br>
+    <span id="KMNumber3"></span></p>
+</div>
+
+    <script>
+ function ConverterHeight(ValueNumber){
+          
+          ValueNumber= parseFloat(ValueNumber);
+          document.getElementById("CMNumber").innerHTML=(ValueNumber+0)
+          
+          ValueNumber= parseFloat(ValueNumber);
+          document.getElementById("MNumber").innerHTML=(ValueNumber*0.01)
+          
+          ValueNumber= parseFloat(ValueNumber);
+          document.getElementById("KMNumber").innerHTML=((ValueNumber/10000))
+ }     
+ function ConverterHeight2(ValueNumber){
+          
+          ValueNumber= parseFloat(ValueNumber);
+          document.getElementById("MNumber2").innerHTML=(ValueNumber+0)
+          
+          ValueNumber= parseFloat(ValueNumber);
+          document.getElementById("CMNumber2").innerHTML=(ValueNumber*100)
+          
+          ValueNumber= parseFloat(ValueNumber);
+          document.getElementById("KMNumber2").innerHTML=ValueNumber/1000
+ }     
+ function ConverterHeight3(ValueNumber){
+          
+          ValueNumber= parseFloat(ValueNumber);
+          document.getElementById("KMNumber3").innerHTML=((ValueNumber+0))
+          
+          ValueNumber= parseFloat(ValueNumber);
+          document.getElementById("CMNumber3").innerHTML=ValueNumber*100000
+          
+          ValueNumber= parseFloat(ValueNumber);
+          document.getElementById("MNumber3").innerHTML=(ValueNumber*1000)
+ }     
+    </script>
+</body>
+</html>
